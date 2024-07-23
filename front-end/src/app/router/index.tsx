@@ -9,4 +9,11 @@ export const createRouter = () =>
         return { Component: LoginRoute };
       },
     },
+    {
+      path: "/admin/dashboard",
+      lazy: async () => {
+        const { AdminDashboardRoute } = await import("./admin/dashboard");
+        return { Component: AdminDashboardRoute };
+      },
+    },
   ]);
