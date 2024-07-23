@@ -5,7 +5,7 @@ export const createRouter = () =>
     {
       path: "/",
       lazy: async () => {
-        const { LoginRoute } = await import("./auth/login");
+        const { LoginRoute } = await import("./login");
         return { Component: LoginRoute };
       },
     },
