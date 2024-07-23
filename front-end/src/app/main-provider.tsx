@@ -1,4 +1,3 @@
-import "@mantine/core/styles.css";
 import React, { PropsWithChildren } from "react";
 import { MantineProvider } from "@mantine/core";
 
